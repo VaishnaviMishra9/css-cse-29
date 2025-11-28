@@ -13,68 +13,41 @@
     then class selector
     then element selector
     then internal styling
-    then external styling
-  -->
-<!DOCTYPE html>
-<html lang="en">
+    then external styling-->
+    <!DOCTYPE html>
+    <html lang="en">
     <head>
-
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet"href="./style.css">
-        <title>CSS Selectors</title>
-        <style>
-            div{
-                color:blue;
-                font-size: 75px;
-            }
-            p{
-                color:red;
-            }
-            .para{
-                
-                color:green;
-            }
-            #jk1{
-                color:brown;
-            }
-            div{
-                border:2px solid black;
-                padding:10px;
-                margin:10px;
-                height:200px;
-                width:200px;
-                text-align:center;
-                background-color:blueviolet ;
-                align-content:center;
+        <title>Document</title>
 
+
+
+
+        <style>
+        
+            .parent{
+                border:2px black;
+                padding:10px;
+                margin:20px;
+                text-align: center;
             }
-        </style>
-        
-        
+            .child{
+                border:16px blueviolet ;
+                padding:10px;
+                margin:20px;
+                font-size:6px ;
+                text-align: center;
+            }
+            </style>
     </head>
     <body>
-        <p style ="color:red">Selectors are of three types - elements 
-        , class and id selectors.
-        </p>
-        <p class="para">Class selectors means to apply the styling to the group of elements.
-         You can assign a single class to the multiple element.
-        <div>hello world</div>
+        
+        <div class="parent">  css box model  
+            
+                <div class="child"> ABES Engg. College Ghaziabad
+                     </div>
 
-        </p>
-        <p class ="jk" id="jk1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, ducimus.</p>
-        <!-- idhr id selector ki  baat maani jaayegi 
-         color sets the color of the text 
-         color:color-name|rgb|rgha|hsl|hexadecimal(under head tag only)
-         a tool color picker is used to pick the color
-         text-align : left , right , center , justify,start,end,initial(pehle joh tha default),inherit(depend on the parent element text alignment )         this aligns the text in an element in the specified direction
-         font size: setting the text size with px , em , rem , % etc 
-         em : relative to the font size of the parent element
-         rem : relative to font size of the root element(html)
-         % : relative to the parent element
-         smaller and larger : relative to the parent element
-         box model: content , padding , border , margin
-         padding : space between content and border     padding: top right bottom left.single value means all sides,if two values then first is for top and bottom and second is for left and right
-         with 4 values top right bottom and left -->
+     </div>
     </body>
+    </html>
